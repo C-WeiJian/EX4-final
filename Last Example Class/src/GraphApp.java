@@ -44,9 +44,9 @@ public class GraphApp {
 					c1 = sc.nextInt();
 					switch (c1) {
 					case 6:
-						System.out.println("Enter number of starting point: ");
+						System.out.println("Enter index of starting point: ");
 						c2 = sc.nextInt();
-						System.out.println("Enter number of ending point: ");
+						System.out.println("Enter index of ending point: ");
 						c3 = sc.nextInt();
 						g.shortestpath(c3, c2);
 						break;
@@ -55,7 +55,7 @@ public class GraphApp {
 						g.printGraph();
 						break;
 					case 2:
-						System.out.println("\nBFS order: ");
+						System.out.println("\nBFS queue order: ");
 						g.automateBFS();
 						break;
 					case 3:
@@ -69,7 +69,7 @@ public class GraphApp {
 					case 5:
 						System.out.println("\nGraph generated: ");
 						g.printGraph();
-						System.out.println("\nBFS order: ");
+						System.out.println("\nBFS queue order: ");
 						g.automateBFS();
 						System.out.println("\nMatrix showing predecessor: ");
 						g.printP();
